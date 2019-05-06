@@ -17,6 +17,24 @@ This document contains information for maintainers and contributing developers. 
 
 ## Testing <a name="testing"></a>
 
+### Finding bugs using smoke tests <a name="smokey"></a>
+
+A set of smoke tests are available that you can use to help find bugs in `doppel-cli`.
+
+To see if `doppel-cli` works for Python and R packages it has been shown to work for in the past, run
+
+```
+./smoke_tests/run.sh $(pwd)/smoke_tests/test_data
+```
+
+To try running `doppel-cli` against all R packages installed on your system (in random order), run
+
+```
+./smoke_tests/all_r_packages.sh $(pwd)/smoke_tests/test_data
+```
+
+If anything breaks, [create an issue](https://github.com/jameslamb/doppel-cli/issues) that includes the logs of the run and the results of running `Rscript -e 'sessionInfo()'`.
+
 ## Documentation <a name="documentation"></a>
 
 ## Releases <a name="releases"></a>

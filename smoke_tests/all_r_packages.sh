@@ -3,7 +3,7 @@
 # failure is a natural part of life
 set -e
 
-OUT_DIR=$(pwd)/test_data
+OUT_DIR=${1}
 SUMMARY_FILE=${OUT_DIR}/successful_r_packages.txt
 
 R_LIB=$(

@@ -3,7 +3,7 @@
 # Failure is a natural part of life
 set -e
 
-OUT_DIR=$(pwd)/test_data
+OUT_DIR=${1}
 SUMMARY_FILE=${OUT_DIR}/results.txt
 
 # Function to run doppel-describe
