@@ -26,6 +26,7 @@ smoke_tests/test_data/successful_*.txt
 # misc files
 **/*.DS_Store
 **/*.log
+run.sh
 
 # documentation
 **/_build/
